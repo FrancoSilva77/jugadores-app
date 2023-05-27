@@ -3,10 +3,10 @@ import dotenv from 'dotenv';
 
 dotenv.config({path: '.env'})
 
-const db = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
+const db = new Sequelize('railway', 'root', 'jeUp7ytcZhzQ4SxSS1QA', {
+  host: 'containers-us-west-5.railway.app',
   dialect: 'mysql',
+  port: 6046,
   define: {
     timestamps: false
   },
